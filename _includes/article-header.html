@@ -42,8 +42,29 @@
   {%- else -%}
     <header style="display:none;"><h1>{{ _article_title }}</h1></header>
   {%- endif -%}
+
+  <div class="author-profile__links">
+    {%- include author-links.html author=_author -%}
+  </div>
+
+  <div class="place">
+    <p>Suzhou &nbsp <i class="fas fa-circle fa-xs"></i> &nbsp Hong Kong &nbsp <i class="fas fa-circle fa-xs"></i> &nbsp New York</p>
+  </div>
+
+  <div class="introduction">
+    <p>I am currently a senior at Columbia University, majoring in Computer Science. I am part of the Joint Bachelor's Degree Program between the City University of Hong Kong and Columbia University. </p>
+  </div>
+
+  <div class="resume">
+    <a class="button button--outline-primary button--rounded button--sm" href="/assets/Resume_Wang_Yucheng.pdf">Resume</a>
+  </div>
+
+
 {%- endif -%}
 
 {%- if include.semantic != false -%}
   <meta itemprop="headline" content="{{ _article_title }}">
 {%- endif -%}
+
+
+
