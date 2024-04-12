@@ -28,6 +28,18 @@ article_header:
 
 ## Projects
 ---
+##### 2023.12
+<div style="display: flex;">
+  <img src="/assets/images/project_5.png" alt="NNDL" style="width: 33%; margin-right: 20px;">
+  <div style="width: 70%;">
+    <b>Refined Prototypical Network for Hierarchical Few-shot Image Classification</b><br>
+    The Course Project for COMS4995 Neural Networks & Deep Learning at Columbia.
+    In this project, we revised the prototypical network to enable it to generalize to unseen novel classes during test. The method performs well in the hierarchical few-shot image classification task with novel classes.
+    <p><a class="button button--outline-primary button--rounded button--sm" href="/assets/pdf/NNDL_Report.pdf">PDF</a></p>
+  </div>
+</div>
+<br>
+
 ##### 2022.06
 <div style="display: flex;">
   <img src="/assets/images/project_1.png" alt="Reddit Visualization System" style="width: 33%; margin-right: 20px;">
@@ -43,7 +55,7 @@ article_header:
   <img src="/assets/images/project_2.png" alt="Mahjong Legend" style="width: 33%; margin-right: 20px;">
   <div style="width: 70%;">
     <b><a href="https://github.com/CS334Group23/mahjong">Mahjong Legend [麻雀传奇]</a></b><br>
-    The group project of CS3343 Software Engineering Practice. Mahjong Legend is a single-player mahjong game based on the rules of Hong Kong Mahjong. The software simulates the mahjong game and allows the user to play with our AI. This program is especially design for the newbie and beginners.
+    The group project of CS3343 Software Engineering Practice at CityU. Mahjong Legend is a single-player mahjong game based on the rules of Hong Kong Mahjong. The software simulates the mahjong game and allows the user to play with our AI. This program is especially design for the newbie and beginners.
   </div>
 </div>
 <br>
@@ -53,7 +65,7 @@ article_header:
   <img src="/assets/images/project_3.png" alt="Message Animation" style="width: 33%; margin-right: 20px;">
   <div style="width: 70%;">
     <b>Message Animation: a Facial Animation based Instant Messaging App</b><br>
-    The group project of CS3483 Multimodal Interface Design. In this project, we develop an instant messaging software that can transfer users' vocal or textual messages into a cartoon animation, helping senders express their emotions and help receivers have a more engaging experience.
+    The group project of CS3483 Multimodal Interface Design at CityU. In this project, we develop an instant messaging software that can transfer users' vocal or textual messages into a cartoon animation, helping senders express their emotions and help receivers have a more engaging experience.
     <p><a class="button button--outline-primary button--rounded button--sm" href="/assets/pdf/3483_Project_Final_Report_Group21.pdf">PDF</a></p>
   </div>
 </div>
