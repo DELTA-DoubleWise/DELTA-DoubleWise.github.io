@@ -11,11 +11,15 @@ article_header:
   background_image:
     src: myAssets/homepgbg.png
 ---
-## Publications
----
-##### 2023.04
+
+<div class = "main-content">
+<div class="content-container">
+
+<h2>Publications</h2>
+<hr>
+<h5>2023.04</h5>
 <div style="display: flex;">
-  <img src="/assets/images/publication_1.png" alt="CHI23" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/publication_1.png" alt="CHI23" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b>Making Sense of Post-match Fan Behaviors in the Online Football Communities</b><br>
     <u>Yucheng Wang</u>, Zhicong Lu<br>
@@ -26,11 +30,23 @@ article_header:
 
 <br/>
 
-## Projects
----
-##### 2023.12
+<h2>Projects</h2>
+<hr>
+<h5>2024.05</h5>
 <div style="display: flex;">
-  <img src="/assets/images/project_5.png" alt="NNDL" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/project_6.jpg" alt="appliedCV" style="width: 33%; margin-right: 20px;" class="project_image">
+  <div style="width: 70%;">
+    <b><a href="https://github.com/DELTA-DoubleWise/Identity_Preserved_Images_Generation">Identity-Preserving Comic Story Generator</a></b><br>
+    The Course Project for COMS4995 Applied Computer Vision at Columbia University.
+    This project introduces an enhanced text-to-image generation system that combines the StableIdentity method with the Stable Diffusion XL model to create high-quality, identity-preserved images, accompanied with a system to generate personalized comic stories.
+    <p><a class="button button--outline-primary button--rounded button--sm" href="/assets/pdf/Applied_CV_Report.pdf">PDF</a></p>
+  </div>
+</div>
+<br>
+
+<h5>2023.12</h5>
+<div style="display: flex;">
+  <img src="/assets/images/project_5.png" alt="NNDL" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b>Refined Prototypical Network for Hierarchical Few-shot Image Classification</b><br>
     The Course Project for COMS4995 Neural Networks & Deep Learning at Columbia.
@@ -40,9 +56,9 @@ article_header:
 </div>
 <br>
 
-##### 2022.06
+<h5>2022.06</h5>
 <div style="display: flex;">
-  <img src="/assets/images/project_1.png" alt="Reddit Visualization System" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/project_1.png" alt="Reddit Visualization System" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b><a href="/project/vis_sys">Reddit Visualizer</a></b><br>
     The extended Reddit visualization system for my Final Year Project: <a href="http://dspace.cityu.edu.hk/handle/2031/9573">Online community user behavior pattern analysis</a>. The project is the basis of my publication on CHI 2023. The project is also selected by CityU as the <b>Outstanding Academic Papers by Students</b> of 2022.
@@ -50,9 +66,9 @@ article_header:
 </div>
 <br>
 
-##### 2021.12
+<h5>2021.12</h5>
 <div style="display: flex;">
-  <img src="/assets/images/project_2.png" alt="Mahjong Legend" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/project_2.png" alt="Mahjong Legend" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b><a href="https://github.com/CS334Group23/mahjong">Mahjong Legend [麻雀传奇]</a></b><br>
     The group project of CS3343 Software Engineering Practice at CityU. Mahjong Legend is a single-player mahjong game based on the rules of Hong Kong Mahjong. The software simulates the mahjong game and allows the user to play with our AI. This program is especially design for the newbie and beginners.
@@ -60,9 +76,9 @@ article_header:
 </div>
 <br>
 
-##### 2021.12
+<h5>2021.12</h5>
 <div style="display: flex;">
-  <img src="/assets/images/project_3.png" alt="Message Animation" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/project_3.png" alt="Message Animation" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b>Message Animation: a Facial Animation based Instant Messaging App</b><br>
     The group project of CS3483 Multimodal Interface Design at CityU. In this project, we develop an instant messaging software that can transfer users' vocal or textual messages into a cartoon animation, helping senders express their emotions and help receivers have a more engaging experience.
@@ -71,9 +87,9 @@ article_header:
 </div>
 <br>
 
-##### 2021.06
+<h5>2021.06</h5>
 <div style="display: flex;">
-  <img src="/assets/images/project_4.png" alt="Index Prediction" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/project_4.png" alt="Index Prediction" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b>Daily Hang Seng Index Trend Prediction applying Deep Learning</b><br>
     The research mentoring scheme guided by Prof. Jacky Keung. This study focuses on predicting the daily Hang Seng Index Trend applying deep learning algorithms, including LSTM and a series of its variations.
@@ -82,13 +98,15 @@ article_header:
 </div>
 <br>
 
-## Music
----
-##### 2023.06
+<h2>Music</h2>
+<hr>
+<h5>2023.06</h5>
 <div style="display: flex;">
-  <img src="/assets/images/music_1.jpeg" alt="Escape Nowhere" style="width: 33%; margin-right: 20px;">
+  <img src="/assets/images/music_1.jpeg" alt="Escape Nowhere" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b><a href="https://soundcloud.com/yucheng-wang-924885956/escaping-nowhere?si=12aa366fdfeb4a988bc708e3e8c29c27&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Escape Nowhere</a></b><br>
     Original beat. Waking up from the indulgence of your dreams and face the repression of your real life.
   </div>
+</div>
+</div>
 </div>

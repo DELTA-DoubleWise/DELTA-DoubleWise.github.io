@@ -20,4 +20,37 @@ body {
     font-size: 20px !important;
 }
 
+.main-content {
+    // z-index: 1;
+    // position: relative;
+    background: url('../images/background.jpg') repeat center center fixed !important; /* Link to your background image */
+    // background-size: cover; /* Cover ensures the background covers the whole area */
+    // background-repeat: repeat; /* Prevents the image from repeating */
+    // -webkit-background-size: cover !important;
+    // -webkit-background-size: cover !important;
+    // -moz-background-size: cover !important;
+    // -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: scroll;
+    width: 100vw; /* Sets the width to be the full width of the viewport */
+    position: relative; /* If it's not already positioned */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    opacity: 0.85;
+}
+
+.content-container {
+    max-width: 75%; /* or whatever max width you prefer */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Optional: for some spacing inside the container */
+}
+
+.project_image {
+    border-radius: 5%;
+    border: 1px solid rgb(15, 15, 15); 
+    box-shadow: 0 8px 16px rgba(15, 15, 15, 0.5);
+}
+
 /* end custom scss snippet */
