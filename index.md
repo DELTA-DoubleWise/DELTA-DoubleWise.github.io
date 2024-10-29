@@ -17,11 +17,23 @@ article_header:
 
 <h2>Publications</h2>
 <hr>
+<h5>2024.10</h5>
+<div style="display: flex;">
+  <img src="/assets/images/publication_2.png" alt="CHI23" style="width: 33%; margin-right: 20px;" class="project_image">
+  <div style="width: 70%;">
+    <b><a href="https://arxiv.org/abs/2410.18908">A Survey on Speech Large Language Models</a></b><br>
+    Jing Peng<sup>*</sup>, <u>Yucheng Wang</u><sup>*</sup>, Yu Xi, Xu Li, Xizhuo Zhang, Kai Yu<br>
+    <i>arXiv preprint arXiv:2410.18908</i><br>
+    <p><a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2410.18908">PDF</a></p>
+  </div>
+</div>
+<br>
+
 <h5>2023.04</h5>
 <div style="display: flex;">
   <img src="/assets/images/publication_1.png" alt="CHI23" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
-    <b>Making Sense of Post-match Fan Behaviors in the Online Football Communities</b><br>
+    <b><a href="https://dl.acm.org/doi/full/10.1145/3544548.3581310">Making Sense of Post-match Fan Behaviors in the Online Football Communities</a></b><br>
     <u>Yucheng Wang</u>, Zhicong Lu<br>
     <i>In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems 2023</i><br>
     <p><a class="button button--outline-primary button--rounded button--sm" href="/assets/pdf/3544548.3581310.pdf">PDF</a></p>
