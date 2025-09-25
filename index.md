@@ -22,7 +22,7 @@ article_header:
   <img src="/assets/images/publication_2.png" alt="CHI23" style="width: 33%; margin-right: 20px;" class="project_image">
   <div style="width: 70%;">
     <b><a href="https://arxiv.org/abs/2410.18908">A Survey on Speech Large Language Models for Understanding</a></b><br>
-    Jing Peng, <sup>*</sup>, <u>Yucheng Wang</u><sup>*</sup>, Bohan Li, Yiwei Guo, Hankun Wang, Yangui Fang, Yu Xi, Haoyu Li, Xu Li, Ke Zhang, Shuai Wang, Kai Yu
+    Jing Peng, <sup>*</sup><u>Yucheng Wang</u><sup>*</sup>, Bohan Li, Yiwei Guo, Hankun Wang, Yangui Fang, Yu Xi, Haoyu Li, Xu Li, Ke Zhang, Shuai Wang, Kai Yu
     <i>arXiv preprint arXiv:2410.18908</i><br>
     <p><a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2410.18908">PDF</a></p>
   </div>
