@@ -28,7 +28,7 @@ article_header:
           Previously, I interned at Tencent AI Lab and AISpeech.
         </p>
         <div class="hero__actions">
-          <a class="button button--primary button--rounded" href="mailto:yuchwang@ethz.ch.edu">Email</a>
+          <a class="button button--primary button--rounded" href="mailto:yuchwang@ethz.ch">Email</a>
           <a class="button button--outline-primary button--rounded" href="/assets/Resume_Wang_Yucheng.pdf">CV</a>
           <a class="button button--outline-primary button--rounded" href="https://scholar.google.com/citations?user=l_-Dt48AAAAJ&hl=en">Google Scholar</a>
           <a class="button button--outline-primary button--rounded" href="https://github.com/DELTA-DoubleWise">GitHub</a>
