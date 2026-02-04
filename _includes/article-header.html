@@ -1,5 +1,6 @@
 {%- include snippets/get-article-title.html article=include.article-%}
 {%- assign _article_title = __return -%}
+{%- assign _is_home = include.article.url == '/' or include.article.url == '/index.html' -%}
 
 {%- if include.html != false -%}
 
@@ -13,9 +14,11 @@
     source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -%}
   {%- assign _show_edit_on_github = __return -%}
 
+  {%- unless _is_home -%}
   <div id="headshot">
     <img src="/assets/images/headshot_yucheng.png" alt="Yucheng Wang" style="width: 150px; height: auto; border-radius: 50%; margin-right: 20px; vertical-align: middle; border: 1px solid rgb(170, 169, 174); box-shadow: 0 8px 16px rgba(79, 76, 88, 0.5);">
   </div>
+  {%- endunless -%}
 
   {%- if _show_title or _show_edit_on_github -%}
     <div class="article__header">
@@ -47,6 +50,7 @@
     <header style="display:none;"><h1>{{ _article_title }}</h1></header>
   {%- endif -%}
 
+  {%- unless _is_home -%}
   <div class="author-profile__links">
     {%- include author-links.html author=_author -%}
   </div>
@@ -56,18 +60,17 @@
   </div>
 
   <div class="introduction">
-    <p style="text-align: justify;">I am a second-year master's student at ETH Zürich, majoring in Computer Science with a specialization in Machine Intelligence. My research focuses on Multimodal Large Language Models, with a particular emphasis on audio. I obtained my Bachelor's degree in Computer Science at Columbia University and City University of Hong Kong in 2024, as part of the Joint Bachelor's Degree Program between these two institutions. Previously I interned at Tencent AI Lab, and AISpeech.</p>
+    <p style="text-align: justify;">I am a second-year master's student at ETH Zürich, majoring in Computer Science with a specialization in Machine Intelligence. My research focuses on multimodal large language models, with a particular emphasis on audio. I obtained my Bachelor's degree in Computer Science at Columbia University and City University of Hong Kong in 2024, as part of the Joint Bachelor's Degree Program between these two institutions. Previously, I interned at Tencent AI Lab and AISpeech.</p>
   </div>
   <div class="resume">
     <a class="button button--outline-primary button--rounded button--sm" href="/assets/Resume_Wang_Yucheng.pdf">Resume</a>
     <!-- <a class="button button--outline-primary button--rounded button--sm" href="/assets/Resume-zh.pdf">简历</a> -->
   </div>
+  {%- endunless -%}
 
 {%- endif -%}
 
 {%- if include.semantic != false -%}
   <meta itemprop="headline" content="{{ _article_title }}">
 {%- endif -%}
-
-
 

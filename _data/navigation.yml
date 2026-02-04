@@ -1,7 +1,11 @@
 header:
-  - title: Projects
-    url:   /#projects
+  - title: About
+    url:   /#about
   - title: Publications
     url:   /#publications
+  - title: Projects
+    url:   /#projects
+  - title: Music
+    url:   /#music
   - title: Resume
     url:   /assets/Resume_Wang_Yucheng.pdf
