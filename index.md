@@ -1,6 +1,6 @@
 ---
 layout: articles
-title: Yucheng Wang
+title:
 show_title: false
 mode: immersive
 header:
