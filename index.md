@@ -50,7 +50,24 @@ article_header:
         <h2 class="section__title">Selected Publications</h2>
       </div>
       <div class="section__list">
-          <article class="entry">
+        <article class="entry">
+          <div class="entry__media">
+            <img src="/assets/images/publication_audiomind.png" alt="Audio-Mind" class="project_image">
+          </div>
+          <div class="entry__body">
+            <div class="entry__meta"><time datetime="2026-05">May 2026</time> • Publication</div>
+            <h3 class="entry__title">
+              <a href="https://arxiv.org/pdf/2605.28480">Audio-Mind: An Auditable Agentic Framework for Audio Understanding</a>
+            </h3>
+            <p class="entry__authors"><u>Yucheng Wang</u><sup>*</sup>, Jing Peng<sup>*</sup>, Hanqi Li, Chenghao Wang, Wenming Tu, Yu Xi, Zhaokai Sun, Kai Yu, Shuai Wang</p>
+            <p class="entry__venue"><em>Preprint, 2026</em></p>
+            <div class="entry__links">
+              <a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2605.28480">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="entry">
           <div class="entry__media">
             <img src="/assets/images/publication_iclr_2026.png" alt="COMPOSE AND FUSE" class="project_image">
           </div>
