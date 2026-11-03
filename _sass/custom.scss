@@ -24,6 +24,34 @@ body {
   background-attachment: fixed;
 }
 
+.page__main-inner:has(.main-content) {
+  background-color: #f3f2ee;
+
+  .page__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .header {
+    background: rgba(24, 28, 30, 0.62);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .article__header--overlay {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.main-content section[id] {
+  scroll-margin-top: 6.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   color: var(--ink);
@@ -38,6 +66,9 @@ a:hover {
 }
 
 .main-content {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(255, 255, 255, 0.88);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -62,7 +93,7 @@ a:hover {
 
 .main-content .hero {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1fr) 300px;
   gap: 32px;
   align-items: start;
   padding-bottom: 32px;
@@ -87,13 +118,71 @@ a:hover {
   font-size: 0.95rem;
   color: var(--muted);
   margin: 0 0 20px;
+
+  a {
+    color: var(--accent);
+    font-weight: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(15, 91, 122, 0.3);
+    text-underline-offset: 3px;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--accent-strong);
+      text-decoration-color: currentColor;
+    }
+  }
 }
 
 .hero__actions {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 0.8fr 1.5fr 1fr;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.main-content .hero__link {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+
+  i {
+    flex-shrink: 0;
+    width: 18px;
+    color: var(--muted);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent-strong);
+    background: rgba(15, 91, 122, 0.08);
+    text-decoration: none;
+
+    i {
+      color: inherit;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
 }
 
 .hero__profile {
@@ -214,6 +303,165 @@ a:hover {
   box-shadow: var(--shadow-soft);
 }
 
+/* Keep the research lists aligned without nesting each item in a card. */
+.section--entries {
+  margin-top: 32px;
+
+  .section__list {
+    gap: 0;
+  }
+
+  .entry {
+    grid-template-columns: 244px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    padding: 16px 0;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .entry:last-child {
+    border-bottom: 0;
+  }
+
+  .entry__media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--paper-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .entry__media .project_image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .entry__body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 12px;
+    min-width: 0;
+  }
+
+  .entry__meta,
+  .entry__title,
+  .entry__summary,
+  .entry__authors,
+  .entry__desc {
+    grid-column: 1 / -1;
+  }
+
+  .entry__venue {
+    grid-column: 1;
+    align-self: center;
+  }
+
+  .entry__links {
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-top: 4px;
+  }
+
+  .entry__venue + .entry__links {
+    grid-column: 2;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .entry__meta {
+    margin-bottom: 4px;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+}
+
+.main-content .section--entries {
+  .section__header {
+    margin-bottom: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2.section__title {
+    border: 0;
+  }
+
+  .section__desc {
+    margin-bottom: 0;
+  }
+
+  h3.entry__title {
+    margin: 0 0 6px;
+    color: #242424;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    a {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--accent);
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  .entry__links .button--outline-primary {
+    color: $main-color-1;
+    border-color: $main-color-1;
+    background-color: transparent;
+
+    &:hover,
+    &:focus-visible {
+      color: #ffffff;
+      background-color: $main-color-1;
+    }
+  }
+
+  p.entry__authors,
+  p.entry__venue,
+  p.entry__desc {
+    margin: 0 0 4px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  p.entry__venue {
+    margin-bottom: 0;
+  }
+
+  p.entry__summary {
+    margin: 6px 0 0;
+    color: #3f4c50;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  p.entry__authors {
+    color: #747474;
+  }
+}
+
 .button--primary {
   background-color: var(--accent);
   border-color: var(--accent);
@@ -268,5 +516,35 @@ a:hover {
 
   .main-content .hero h1.hero__title {
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .section--entries .entry {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__actions {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .main-content .hero__link {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 4px;
+    font-size: 0.75rem;
+  }
+
+  .main-content .section--entries h2.section__title {
+    font-size: 1.6rem;
+  }
+
+  .section--entries .entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px 0;
   }
 }

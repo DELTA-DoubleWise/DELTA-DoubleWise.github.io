@@ -2,6 +2,7 @@
 layout: articles
 title:
 show_title: false
+full_width: true
 mode: immersive
 header:
   theme: dark
@@ -21,31 +22,44 @@ article_header:
       <div class="hero__text">
         <h1 class="hero__title">Yucheng Wang</h1>
         <p class="hero__subtitle">
-          I am a second-year master's student at ETH Zürich, majoring in Computer Science with a specialization in
-          Machine Intelligence. My research focuses on multimodal large language models, with a particular emphasis
-          on audio. I obtained my Bachelor's degree in Computer Science at Columbia University and City University of
-          Hong Kong in 2024, as part of the Joint Bachelor's Degree Program between these two institutions.
-          Previously, I interned at Tencent AI Lab and AISpeech.
+          I am a second-year master's student at <a href="https://ethz.ch/en.html">ETH Zürich</a>, majoring in Computer Science
+          with a specialization in Machine Intelligence. I obtained my Bachelor's degree in Computer Science at
+          <a href="https://www.columbia.edu/">Columbia University</a> and <a href="https://www.cityu.edu.hk/">City University of
+          Hong Kong</a> in 2024, as part of the <a href="https://cityu-hk.gs.columbia.edu/">Joint Bachelor's Degree Program</a>
+          between these two institutions. Previously, I interned at Tencent AI Lab and
+          <a href="https://www.aispeech.com/">AISpeech</a>.
         </p>
-        <div class="hero__actions">
-          <a class="button button--primary button--rounded" href="mailto:yuchwang@ethz.ch">Email</a>
-          <a class="button button--outline-primary button--rounded" href="/assets/Resume_Wang_Yucheng.pdf">CV</a>
-          <a class="button button--outline-primary button--rounded" href="https://scholar.google.com/citations?user=l_-Dt48AAAAJ&hl=en">Google Scholar</a>
-          <a class="button button--outline-primary button--rounded" href="https://github.com/DELTA-DoubleWise">GitHub</a>
-        </div>
+        <p class="hero__subtitle">
+          My research focuses on multimodal large language models, with a particular emphasis on audio.
+          I am especially interested in <strong>multimodal reasoning</strong>: how LLMs understand and use fine-grained
+          details in multimodal content. I also study <strong>voice agents</strong>, aiming to build more capable systems that
+          provide natural and intuitive interfaces for <strong>human-computer interaction</strong>.
+        </p>
       </div>
       <div class="hero__profile">
         <img src="/assets/images/headshot_yucheng.png" alt="Yucheng Wang" class="hero__headshot">
         <div class="hero__profile-body">
           <p class="hero__profile-title">MSc CS @ ETH Zürich</p>
-          <p class="hero__profile-subtitle">Multimodal LLMs (Speech/Audio)</p>
-          <p class="hero__profile-subtitle"></p>
           <p class="hero__profile-locations">Suzhou · Hong Kong · New York · Zürich</p>
         </div>
       </div>
+      <div class="hero__actions">
+        <a class="hero__link" href="mailto:yuchwang@ethz.ch">
+          <i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span>
+        </a>
+        <a class="hero__link" href="/assets/Resume_Wang_Yucheng.pdf">
+          <i class="far fa-file-alt" aria-hidden="true"></i><span>CV</span>
+        </a>
+        <a class="hero__link" href="https://scholar.google.com/citations?user=l_-Dt48AAAAJ&hl=en">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span>
+        </a>
+        <a class="hero__link" href="https://github.com/DELTA-DoubleWise">
+          <i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span>
+        </a>
+      </div>
     </section>
 
-    <section class="section" id="publications">
+    <section class="section section--entries" id="publications">
       <div class="section__header">
         <h2 class="section__title">Selected Publications</h2>
       </div>
@@ -64,6 +78,7 @@ article_header:
             <div class="entry__links">
               <a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2605.28480">PDF</a>
             </div>
+            <p class="entry__summary">An audio understanding agent that acquires evidence through tools and targeted re-listening to produce auditable answers.</p>
           </div>
         </article>
 
@@ -81,6 +96,7 @@ article_header:
             <div class="entry__links">
               <a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2509.23744">PDF</a>
             </div>
+            <p class="entry__summary">A controlled study identifying task-composition and modality-fusion bottlenecks in reasoning across text, vision, and audio.</p>
           </div>
         </article>
 
@@ -98,6 +114,7 @@ article_header:
             <div class="entry__links">
               <a class="button button--outline-primary button--rounded button--sm" href="https://arxiv.org/pdf/2410.18908">PDF</a>
             </div>
+            <p class="entry__summary">A systematic review of speech LLM architectures, training strategies, datasets, evaluation methods, and open challenges.</p>
           </div>
         </article>
 
@@ -117,12 +134,13 @@ article_header:
             <div class="entry__links">
               <a class="button button--outline-primary button--rounded button--sm" href="/assets/pdf/3544548.3581310.pdf">PDF</a>
             </div>
+            <p class="entry__summary">Examines how match results relative to fans' expectations shape sentiment, discussion topics, and voting on Reddit.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section section--entries" id="projects">
       <div class="section__header">
         <h2 class="section__title">Selected Projects</h2>
         <p class="section__desc">Course projects and applied research systems.</p>
